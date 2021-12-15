@@ -4,19 +4,22 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_registro.*
+import com.example.guiadewidgets.databinding.ActivityRegistroBinding
+
 
 class RegistroActivity : AppCompatActivity() {
     var sexo = "Hombre"
+    lateinit var  binding : ActivityRegistroBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registro)
+        binding = ActivityRegistroBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
     }
     fun registrar (view:View){
-        var correo = edtCorreo.text.toString()
-        var contrasenia = edtContrasenia.text.toString()
-        if (radHombre.isChecked){
+        var correo = binding.edtCorreo.text.toString()
+        var contrasenia = binding.edtContrasenia.text.toString()
+        if (binding.radHombre.isChecked){
             sexo = "Hombre"
         }else{
             sexo = "Mujer"
