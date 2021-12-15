@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="200px"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Widgets de texto" />
+    <Button
+        android:id="@+id/btnBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Botones" />
+    <Button
+        android:id="@+id/btnSeleccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Botones de Selección" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro" />
+</LinearLayout>

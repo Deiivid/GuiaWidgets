@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".BotonesActivity">
+
+
+    <Button
+        android:id="@+id/btnSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saludar"
+        android:layout_gravity="center_horizontal"
+        android:tag="saludar"
+        android:onClick="mostarBotonSeleccionado"
+        />
+
+    <ImageButton
+        android:id="@+id/btnImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_email"
+        android:layout_gravity="center_horizontal"
+        android:tag="email"
+        android:onClick="mostarBotonSeleccionado"
+        />
+</LinearLayout>
