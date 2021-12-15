@@ -6,7 +6,7 @@ import android.widget.CheckBox
 import android.widget.RadioButton
 import android.widget.Switch
 import android.widget.Toast
-
+import kotlinx.android.synthetic.main.activity_seleccion.*
 
 class SeleccionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
